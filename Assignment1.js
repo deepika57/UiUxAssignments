@@ -29,4 +29,11 @@ class Stack {
       return this.upper;
     }
   }
+  peek() {
+    if (this.upper == -1) {
+      console.log("empty stack");
+    } else {
+      console.log("First value in the Stack is " + this.array[this.upper]);
+    }
+  }
 }
