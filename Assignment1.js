@@ -19,4 +19,14 @@ class Stack {
       return this.upper;
     }
   }
+
+  pop() {
+    if (this.upper == -1) console.log("underfow!!");
+    else {
+      console.log("Stack pop process started ");
+      console.log(`${this.array[this.upper]} is popped`);
+      this.upper = this.upper - 1;
+      return this.upper;
+    }
+  }
 }
